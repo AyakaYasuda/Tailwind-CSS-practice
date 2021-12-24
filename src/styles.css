@@ -33,3 +33,15 @@
     }
   }
 }
+
+/* Function: Screen */
+@screen sm {
+  .rotate-0 {
+    transform: rotate(0deg);
+  }
+}
+
+/* Function: Theme */
+.content-area {
+    height: theme('height.60');
+}

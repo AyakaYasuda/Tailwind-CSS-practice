@@ -629,16 +629,6 @@ a {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.p-21 {
-  padding: 5.5rem;
-}
-
-@varients hover, focus {
-  .p-21 {
-    padding: 5.5rem;
-  }
-}
-
 .btn {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -661,6 +651,20 @@ a {
 .btn-green:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(21 128 61 / var(--tw-bg-opacity));
+}
+
+/* Function: Screen */
+
+@media (min-width: 640px) {
+  .rotate-0 {
+    transform: rotate(0deg);
+  }
+}
+
+/* Function: Theme */
+
+.content-area {
+  height: 15rem;
 }
 
 .placeholder\:italic::-moz-placeholder {
@@ -696,30 +700,6 @@ a {
 
 @varients hover, focus {
   .hover\:p-21:hover {
-    padding: 5.5rem;
-  }
-}
-
-.hover\:placeholder\:p-21:hover::-moz-placeholder {
-  padding: 5.5rem;
-}
-
-.hover\:placeholder\:p-21:hover:-ms-input-placeholder {
-  padding: 5.5rem;
-}
-
-.hover\:placeholder\:p-21:hover::placeholder {
-  padding: 5.5rem;
-}
-
-@varients hover, focus {
-  .hover\:placeholder\:p-21:hover::-moz-placeholder {
-    padding: 5.5rem;
-  }
-  .hover\:placeholder\:p-21:hover:-ms-input-placeholder {
-    padding: 5.5rem;
-  }
-  .hover\:placeholder\:p-21:hover::placeholder {
     padding: 5.5rem;
   }
 }
