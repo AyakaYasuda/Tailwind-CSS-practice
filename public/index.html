@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TailwindCSS Course</title>
+    <link rel="stylesheet" href="./output.css" />
+  </head>
+  <body>
+    <!-- breakpoint -->
+    <div class="lg:container xl:mx-auto bg-indigo-600 h-32">
+      <h2 class="text-2xl text-center">Container</h2>
+    </div>
+
+    <!-- Flex Box -->
+    <div class="flex gap-4 flex-row flex-wrap bg-pink-500 text-white mt-6">
+      <div class="flex-none bg-green-400 w-40 h-40 m-4 text-center">Flex 1</div>
+      <div class="flex-grow bg-green-400 w-40 h-40 m-4 text-center">Flex 2</div>
+      <div class="flex-none bg-green-400 w-40 h-40 m-4 text-center">Flex 3</div>
+    </div>
+
+    <!-- Grid -->
+    <div
+      class="grid xl:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-4 mt-6 mb-6"
+    >
+      <div class="bg-yellow-300 w-full h-40 text-center text-xl">01</div>
+      <div class="bg-yellow-300 w-full h-40 text-center text-xl">02</div>
+      <div class="bg-yellow-300 w-full h-40 text-center text-xl">03</div>
+      <div class="bg-yellow-300 w-full h-40 text-center text-xl">04</div>
+    </div>
+
+    <!-- Utility First API -->
+    <button class="btn btn-green">Click me!</button>
+    <button class="btn btn-green">Click me!</button>
+
+    <!-- Conditional Styles -->
+    <div class="bg-indigo-400 w-1/2 text-center sm:text-left mt-6">
+      Text Center
+    </div>
+
+    <!-- Pseudo Selectors -->
+    <label class="relative block m-2">
+      <span class="sr-only">Search</span>
+      <input
+        class="
+          placeholder:italic placeholder:text-gray-400
+          block
+          bg-white
+          w-full
+          border border-gray-300
+          rounded-md
+          py-2
+          pl-9
+          pr-3
+          shadow-sm
+          focus:outline-none
+          focus:border-sky-500
+          focus:ring-sky-500
+          focus:ring-1
+          sm:text-sm
+        "
+        placeholder="Search for anything..."
+        type="text"
+        name="search"
+      />
+    </label>
+  </body>
+</html>
