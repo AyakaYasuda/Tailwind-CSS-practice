@@ -10,3 +10,26 @@
 .btn-green {
   @apply rounded-lg shadow-md text-white bg-green-500 hover:bg-green-700;
 }
+
+@layer base {
+  a {
+    @apply text-pink-600 underline;
+  }
+}
+
+@layer components {
+  .btn-blue {
+    @apply py-2 px-4 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700;
+  }
+}
+
+@layer utilities {
+  .p-21 {
+    padding: 5.5rem;
+  }
+  @varients hover, focus {
+    .p-21 {
+      padding: 5.5rem;
+    }
+  }
+}
